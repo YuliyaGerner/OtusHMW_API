@@ -74,7 +74,7 @@ def response_brewery_by_name(request):
     response = requests.get(openbrewery + f'breweries', params=request.param).json()
     return response
 
-@pytest.fixture(params=[{"by_type":"brewpub"}])
+@pytest.fixture(params=[{"by_type":"planning"}])
 def response_brewery_by_type(request):
     """Фикстура возвращает результат
     запроса получения списка пивоварен, выбранных по типу"""

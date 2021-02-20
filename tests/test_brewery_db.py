@@ -29,5 +29,5 @@ class TestBreweryDb:
     def test_check_brewery_by_type(self, response_brewery_by_type):
         """Проверка по выбранному типу"""
         assert response_brewery_by_type != []
-        assert response_brewery_by_type[0]['by_type'] == "brewpub"
+        assert response_brewery_by_type[0]['by_type'] == "planning"
         print(response_brewery_by_type)
